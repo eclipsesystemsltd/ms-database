@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `customerorder`
+(
+	`id`					BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	`customer`				VARCHAR(50),
+	`created_date`				DATETIME
+) ENGINE = MyISAM;
+

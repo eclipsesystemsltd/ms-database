@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `model_section`
+(
+	`id`					BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	`model_id`				BIGINT UNSIGNED NOT NULL,
+	`section_id`			BIGINT UNSIGNED NOT NULL,
+	FOREIGN KEY (model_id) REFERENCES model(id),
+	FOREIGN KEY (section_id) REFERENCES section(id)
+) ENGINE = MyISAM;

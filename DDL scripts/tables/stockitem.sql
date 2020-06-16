@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `stockitem`
+(
+	`id`				BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	`partnumber`			VARCHAR(32) NULL,
+	`description`			VARCHAR(512),
+	`price`				DECIMAL(8,2)
+) ENGINE = MyISAM;
+

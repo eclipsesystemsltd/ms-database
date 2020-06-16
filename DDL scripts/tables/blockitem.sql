@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `blockitem`
+(
+	`id`					BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	`reference`				VARCHAR(16),
+	`description`			VARCHAR(128),
+	`quantity`				INT UNSIGNED NOT NULL,
+	`part_id`				BIGINT UNSIGNED NOT NULL,
+	`block_id`				BIGINT UNSIGNED NOT NULL,
+	FOREIGN KEY (part_id) REFERENCES part(id),
+	FOREIGN KEY (block_id) REFERENCES block(id)
+) ENGINE = MyISAM;

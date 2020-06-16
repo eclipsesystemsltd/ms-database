@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `modelrange`
+(
+	`id`				BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	`name`				VARCHAR(128) NOT NULL,
+	`manufacturer_code`		VARCHAR(128) NULL,
+	UNIQUE(name)
+) ENGINE = MyISAM;
+
